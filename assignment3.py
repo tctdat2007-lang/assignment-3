@@ -25,19 +25,19 @@ hemoglobin_value = float(input("Enter the hemoglobin value: "))
 if sex == "Female":
     if hemoglobin_value < 117:
         print("hemoglobin is low")
-    if hemoglobin_value > 155:
+    elif hemoglobin_value > 155:
         print("hemoglobin is high")
     else:
         print("hemoglobin is normal")
 if sex == "Male":
     if hemoglobin_value < 134:
-        print("hemoglobin is normal")
-    if hemoglobin_value > 167:
+        print("hemoglobin is low")
+    elif hemoglobin_value > 167:
         print("hemoglobin is high")
     else:
         print("hemoglobin is normal")
 
-year = input("Enter the year: ")
+year = int(input("Enter the year: "))
 if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print(f"{year} is a leap year")
 else:
